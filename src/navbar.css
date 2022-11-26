@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #050521;
+}
+
+.nav {
+    font-family: monospace;
+    background-color: #050521;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 0px 0px 2px 0px;
+    color: rgb(177, 252, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 2rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(134, 255, 159);
+
+}
+
+.title-period {
+    color: rgb(134, 255, 159);
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav li{
+    transition: 0.3s linear;
+    font-size: larger;
+    color: rgb(172, 172, 172);
+}
+
+.nav li.active {
+    border-radius: 6px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px white, 0 0 20px rgb(181, 229, 255), 0 0 40px rgb(91, 240, 251);
+}
+
+.social-link {
+    font-weight: bold;
+
+}
+.com-container{
+    text-align: center;
+}
+
+.nav li:hover{
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+    /* text-shadow: 0 0 10px white, 0 0 20px rgb(181, 229, 255), 0 0 40px rgb(91, 240, 251); */
+    text-decoration: underline;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.nav-numbers{
+    padding-right: 6px;
+    color: rgb(134, 255, 159);
+}
+
+.site-title-lit {
+    color: rgb(134, 255, 159);
+    font-weight: bold;
+    outline: none;
+    animation: animate 5s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animate 
+{
+    0%,18%,20%,50.1%,60%, 65%, 80%, 90.1%, 92% 
+    {
+        color: rgb(134, 255, 159);
+        box-shadow: none;
+    }
+    18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 100%
+    {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 10px rgb(134, 255, 159),
+        0 0 20px rgb(134, 255, 159),
+        0 0 40px rgb(134, 255, 159),
+        0 0 80px rgb(134, 255, 159),
+        0 0 160px rgb(134, 255, 159);
+    }
+}
+
+.link-icons{
+    font-size: large;
+    transition: 0.3s linear;
+    color: white;
+}
+
+.link-icons:hover{
+    color: #abf5c1;
+}
+
+.typewriter-container{
+color: white;
+font-size: 25px;
+font-family: 'Courier New', Courier, monospace;
+text-align: center;
+position:sticky;
+right: 666.5px;
+margin-top: 70px;    
+background-color: transparent;
+}

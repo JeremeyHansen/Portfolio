@@ -1,0 +1,21 @@
+.about-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 18%;
+    margin-left: 10%;
+    background-color: rgba(58, 58, 58, 0.9);
+    width: 50%;
+    color: white;
+    height: 48vh;
+    align-content: flex-start;
+    border: solid 5px white;
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.about-container p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
