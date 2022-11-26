@@ -7,6 +7,7 @@ import Home from "./pages/Home"
 import { Route, Routes } from "react-router-dom"
 import Particles from "./pages/Particles.js"
 import "./css/popup.css"
+import Footer from "./pages/Footer"
 
 
 
@@ -24,6 +25,7 @@ function App() {
       </Routes>
     </div>
     <Particles />
+    <Footer />
     </>
   )
 }

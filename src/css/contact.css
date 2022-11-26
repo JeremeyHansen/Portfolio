@@ -1,3 +1,6 @@
+
+@media only screen and (max-width: 1500px) {
+
 .contact-container {
   border: solid 5px white;
   border-radius: 10px;
@@ -69,4 +72,22 @@ input::placeholder {
     background-color: #65ff91;
     box-shadow: 0 0 10px #65ff91, 0 0 20px #65ff91;
     cursor: pointer;
+}
+}
+@media only screen and (max-width: 480px) {
+  .contact-container{
+    height: 80vh;
+  }
+  .contact-container input{
+    width: 70%;
+  }
+  .contact-container textarea{
+    width: 70%;
+    height: 90px;
+  }
+  .nav li{
+      visibility: hidden;
+      font-size: .1rem;
+  }
+
 }

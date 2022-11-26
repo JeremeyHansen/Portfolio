@@ -7,6 +7,9 @@ body {
     background-color: #050521;
 }
 
+@media only screen and (max-width: 2000px) {
+
+
 .nav {
     font-family: monospace;
     background-color: #050521;
@@ -128,6 +131,19 @@ font-family: 'Courier New', Courier, monospace;
 text-align: center;
 position:sticky;
 right: 666.5px;
-margin-top: 70px;    
+margin-top: 35px;    
 background-color: transparent;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+    .site-title{
+        font-size: 2em;
+    }
+    .nav li{
+        visibility: hidden;
+        font-size: .1rem;
+    }
+
 }

@@ -4,17 +4,12 @@ export default function Footer(){
             <ul>
                 <li>
                     <p>
-                        jeremeythansen@gmail.com
+                        <span>Email: </span> jeremeythansen@gmail.com
                     </p>
                 </li>
                 <li>
                     <p>
-                        (980)-422-5555
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <a href="">here.</a>
+                        <span>Phone:</span> (980)-422-5555
                     </p>
                 </li>
             </ul>
