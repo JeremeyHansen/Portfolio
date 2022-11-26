@@ -45,7 +45,7 @@ const ParticlesComponent = () => {
                   straight: false,
                   trail: {
                     fillColor: "#050521",
-                    length: 20,
+                    length: 40,
                     enable: true
                   }
                 },
