@@ -40,8 +40,8 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             src={OnlyJams}
-            loop
-            autoPlay
+            
+            
             muted
             onClick={handleOpenOnlyJams}
           ></video>
@@ -67,8 +67,8 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             src={Noteful}
-            loop
-            autoPlay
+            
+            
             muted
             onClick={handleOpenNoteful}
           ></video>
@@ -95,8 +95,8 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             src={Flatify}
-            loop
-            autoPlay
+            
+            
             muted
             onClick={handleOpenFlatify}
           ></video>

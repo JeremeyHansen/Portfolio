@@ -8,12 +8,21 @@ import { Route, Routes } from "react-router-dom"
 import Particles from "./pages/Particles.js"
 import "./css/popup.css"
 import Footer from "./pages/Footer"
-
-
+import StartScreen from "./pages/StartScreen"
+import { useState, useEffect } from "react"
 
 function App() {
+  const [className, setClassName] = useState("startscreen")
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setClassName("invisible");
+    }, 4800)
+    return () => clearTimeout(timer)
+  }, [])
   return (
     <>
+    <StartScreen className={className}/>
     <Navbar /> 
     <div className="com-container">
       <Routes>

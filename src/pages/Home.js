@@ -14,7 +14,7 @@ export default function Home() {
       <h3>I like to build things on the internet.</h3>
       <p>
         I am a full stack software engineer based out of Charlotte, North
-        Carolina. I specialize in planning, building and designing exceptional
+        Carolina. I specialize in the planning, designing and building of exceptional
         websites, applications, and everything in between.
       </p>
       <Link to="/contact">
