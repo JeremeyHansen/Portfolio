@@ -17,7 +17,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setClassName("invisible");
-    }, 4800)
+    }, 2000)
     return () => clearTimeout(timer)
   }, [])
   return (
