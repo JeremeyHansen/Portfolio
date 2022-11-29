@@ -11,6 +11,7 @@ import { GoMarkGithub } from "react-icons/go";
 import Brewery from "../brewery.jpg";
 import WeSearch from "../wesearch.mp4";
 
+
 export default function Portfolio() {
   const [openFlatify, setOpenFlatify] = useState(false);
   const [openOnlyJams, setOpenOnlyJams] = useState(false);
@@ -49,7 +50,6 @@ export default function Portfolio() {
             src={OnlyJams}
             alt="Only Jams"
             muted
-            autoPlay
             loop
             webkit-playsinline 
             playsinline
@@ -80,7 +80,6 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             muted          
-            autoPlay
             loop
             webkit-playsinline 
             playsinline
@@ -116,7 +115,6 @@ export default function Portfolio() {
             src={Flatify}
             alt="Flatify"
             muted
-            autoPlay
             loop
             webkit-playsinline 
             playsinline
@@ -146,7 +144,6 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             muted
-            autoPlay
             loop
             webkit-playsinline 
             playsinline
