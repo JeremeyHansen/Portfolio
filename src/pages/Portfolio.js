@@ -49,7 +49,7 @@ export default function Portfolio() {
           <video
             src={OnlyJams}
             loop
-            autoPlay
+            
             muted
             onClick={handleOpenOnlyJams}
           ></video>
@@ -76,7 +76,7 @@ export default function Portfolio() {
           <video
             src={Noteful}
             loop
-            autoPlay
+            
             muted
             onClick={handleOpenNoteful}
           ></video>
@@ -104,7 +104,7 @@ export default function Portfolio() {
           <video
             src={Flatify}
             loop
-            autoPlay
+            
             muted
             onClick={handleOpenFlatify}
           ></video>
@@ -130,7 +130,7 @@ export default function Portfolio() {
           <video
           src={WeSearch}
           loop
-          autoPlay
+          
           muted
           onClick={handleOpenWeSearch}
           ></video>

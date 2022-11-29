@@ -97,8 +97,6 @@
     margin-right: 3%;
 }
 
-}
-
 .footer li{
     text-decoration: none;
     list-style: none;
@@ -112,6 +110,8 @@
     color: white;
     font-size: larger;
 }
+}
+
 
 @media only screen and (max-width: 480px) {
     .home-container{
@@ -157,4 +157,20 @@
         top: 0;
         left: 0;
       }
+      .footer{
+        background-color: rgb(5, 5, 33, .9);
+      }
+      .footer li{
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .footer span{
+        color: rgb(134, 255, 159);
+    }
+    
+    .footer-logo{
+        color: white;
+        font-size: larger;
+    }
 }

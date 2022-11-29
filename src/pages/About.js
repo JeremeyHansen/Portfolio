@@ -13,6 +13,7 @@ export default function About() {
         />
       </div>
       <div className="about-container">
+        <img className="profile-pic" src={image} alt="Jeremey Hansen"></img>
         <div className="about-section">
           <h1>Jeremey Hansen.</h1>
           <p>
@@ -30,7 +31,6 @@ export default function About() {
             to you!
           </p>
         </div>
-        <img className="profile-pic" src={image} alt="Jeremey Hansen"></img>
       </div>
     </>
   );

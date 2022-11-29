@@ -152,6 +152,8 @@ background-color: transparent;
     }
     .page-link{
         display: none;
+        visibility: hidden;
+
     }
     .link-icons{
         display: none;
@@ -162,9 +164,9 @@ background-color: transparent;
         border: 0;
         height: 40px;
         width: 40px;
-        background-color: #050521;
+        background-color: rgb(5, 5, 33, .01);
         position: absolute;
-        top: 1.4%;
+        top: 2.4%;
         right: 15px;
         color: white;
         font-size: 1.5rem;

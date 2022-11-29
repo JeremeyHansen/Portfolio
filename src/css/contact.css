@@ -78,7 +78,8 @@ input::placeholder {
 @media only screen and (max-width: 480px) {
   .contact-container{
     margin-top: 70px;
-    height: 66vh;
+    height: 63vh;
+    z-index: 2;
   }
   .contact-container input{
     width: 70%;
