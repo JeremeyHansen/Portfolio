@@ -149,6 +149,7 @@ background-color: transparent;
     }
 
     .hamburger{
+        display: contents;
         color: white;
     }
 
