@@ -76,7 +76,6 @@ export default function Portfolio() {
             friends, user authentication and authorization, and a built in
             messenger system.`}
           </p>
-          <p>Click image for video demo</p>
         </div>
         <div className="portfolio-cards">
           <video
@@ -109,7 +108,6 @@ export default function Portfolio() {
             authorization, create and subscribe to groups, and to post, edit, or
             delete notes.`}
           </p>
-          <p className="video-demo">Click image for video demo</p>
         </div>
         <div className="portfolio-cards">
           <video
@@ -140,7 +138,6 @@ export default function Portfolio() {
             persist to your Spotify account. Flatify also has a built in audio
             player to play whatever music you desire.`}
           </p>
-          <p className="video-demo">Click image for video demo</p>
         </div>
         <div className="portfolio-cards">
           <video
@@ -169,7 +166,6 @@ export default function Portfolio() {
             listed places. Key features: backend REST API, JWT user
             authentication, full CRUD on two models.`}
           </p>
-          <p className="video-demo">Click image for video demo</p>
         </div>
         <div className="portfolio-cards">
           <img src={Brewery} alt="What's Brewin'?"></img>
