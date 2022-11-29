@@ -53,6 +53,7 @@ export default function Portfolio() {
             loop
             webkit-playsinline 
             playsinline
+            nofullscreen
             onClick={handleOpenOnlyJams}
           ></video>
           <h2>

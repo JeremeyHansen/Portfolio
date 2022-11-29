@@ -76,4 +76,11 @@
         font-family: 'Courier New', Courier, monospace;
         display: contents;
     }
+
+    .popup{
+        display: none
+    }
+    .popup-inner{
+        display: none;
+    }
 }
