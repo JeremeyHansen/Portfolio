@@ -45,7 +45,6 @@ export default function Navbar() {
       <div className="hamburger">
       <FiMenu onClick={handleOpenBurger}/>
       </div>
-      (open&&)
     </nav>
   );
 }

@@ -11,7 +11,6 @@ import { useState } from "react";
 import { GoMarkGithub } from "react-icons/go";
 import Brewery from "../brewery.jpg";
 import WeSearch from "../wesearch.mp4"
-import { motion, AnimatePresence } from "framer-motion"
 
 
 export default function Portfolio() {
