@@ -153,6 +153,13 @@ background-color: transparent;
     }
 
     .page-link{
+        visibility: hidden;
+
+        display: none;
+    }
+    .link-icons{
+        visibility: hidden;
+
         display: none;
     }
 
