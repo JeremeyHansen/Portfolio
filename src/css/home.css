@@ -81,6 +81,8 @@
     background-color: transparent;
     color: rgb(190, 190, 190);
     width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer ul {
@@ -93,7 +95,6 @@
     gap: 1.5rem;
     margin-left: 3%;
     margin-right: 3%;
-    padding-top: 5px;
 }
 
 }
@@ -105,6 +106,11 @@
 
 .footer span{
     color: rgb(134, 255, 159);
+}
+
+.footer-logo{
+    color: white;
+    font-size: larger;
 }
 
 @media only screen and (max-width: 480px) {

@@ -5,6 +5,7 @@ import Noteful from "../Noteful.mp4";
 import "../css/portfolio.css";
 import OnlyJamsPopup from "./OnlyJams.js";
 import FlatifyPopup from "./Flatify.js";
+import WeSearchPopup from "./WeSearch.js";
 import NotefulPopup from "./Noteful.js";
 import { useState } from "react";
 import { GoMarkGithub } from "react-icons/go";
@@ -14,6 +15,8 @@ export default function Portfolio() {
   const [openFlatify, setOpenFlatify] = useState(false);
   const [openOnlyJams, setOpenOnlyJams] = useState(false);
   const [openNoteful, setOpenNoteful] = useState(false);
+  const [openWeSearch, setOpenWeSearch] = useState(false);
+
 
   const handleOpenFlatify = () => {
     setOpenFlatify(true);
@@ -27,6 +30,9 @@ export default function Portfolio() {
     setOpenNoteful(true);
   };
 
+  const handleOpenWeSearch = () => {
+    setOpenWeSearch(true);
+  };
   return (
     <div>
       <div className="typewriter-container">
@@ -40,8 +46,8 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             src={OnlyJams}
-            
-            
+            loop
+            autoPlay
             muted
             onClick={handleOpenOnlyJams}
           ></video>
@@ -67,8 +73,8 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             src={Noteful}
-            
-            
+            loop
+            autoPlay
             muted
             onClick={handleOpenNoteful}
           ></video>
@@ -95,8 +101,8 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             src={Flatify}
-            
-            
+            loop
+            autoPlay
             muted
             onClick={handleOpenFlatify}
           ></video>
@@ -118,7 +124,29 @@ export default function Portfolio() {
             player to play whatever music you desire.{" "}
           </p>
         </div>
-        <div className="portfolio-cards"></div>
+        <div className="portfolio-cards">
+          <video
+          loop
+          autoPlay
+          muted
+          onClick={handleOpenWeSearch}
+          ></video>
+          <h2>
+            We Search.
+            <a
+              className="git-logo"
+              href="https://github.com/JeremeyHansen/front-end-project-3"
+            >
+              <GoMarkGithub />
+            </a>
+          </h2>
+          <p>
+            We Search is an Atlanta based Yelp mock up. Users can sign up and
+            add whatever places they like as well as leave reviews on previously
+            listed places. Key features: backend REST API, JWT user
+            authentication, full CRUD on two models.{" "}
+          </p>
+        </div>
         <div className="portfolio-cards">
           <img src={Brewery} alt="What's Brewin'?"></img>
           <h2>
@@ -142,6 +170,7 @@ export default function Portfolio() {
       {openOnlyJams && <OnlyJamsPopup setOpenOnlyJams={setOpenOnlyJams} />}
       {openNoteful && <NotefulPopup setOpenNoteful={setOpenNoteful} />}
       {openFlatify && <FlatifyPopup setOpenFlatify={setOpenFlatify} />}
+      {openWeSearch && <WeSearchPopup setOpenWeSearch={setOpenWeSearch} />}
     </div>
   );
 }
