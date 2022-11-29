@@ -1,4 +1,4 @@
-import NotefulVid from "../Noteful.mp4"
+import WeSearchVid from "../wesearch.mp4"
 
 export default function WeSearch({ setOpenWeSearch }) {
   return (
@@ -8,7 +8,7 @@ export default function WeSearch({ setOpenWeSearch }) {
           Close
         </button>
         <video
-            src={NotefulVid}
+            src={WeSearchVid}
             loop
             autoPlay
             muted

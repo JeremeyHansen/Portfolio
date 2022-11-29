@@ -1,8 +1,15 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import { GoMarkGithub } from "react-icons/go";
 import { BsLinkedin } from "react-icons/bs";
+import { FiMenu } from "react-icons/fi";
+import { useState } from "react"
 
 export default function Navbar() {
+  const [open, setOpen ] = useState(false)
+  
+  const handleOpenBurger = () => {
+    setOpen(!open)
+  }
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
@@ -18,11 +25,11 @@ export default function Navbar() {
         <CustomLink to="/portfolio">
           <span className="nav-numbers">02.</span>Portfolio
         </CustomLink>
-        <CustomLink to="/resume">
+        {/* <CustomLink to="/resume">
           <span className="nav-numbers">03.</span>Resume
-        </CustomLink>
+        </CustomLink> */}
         <CustomLink to="/contact">
-          <span className="nav-numbers">04.</span>Contact
+          <span className="nav-numbers">03.</span>Contact
         </CustomLink>
         <div className="link-icons">
           <a href="https://github.com/JeremeyHansen">
@@ -35,6 +42,10 @@ export default function Navbar() {
           </a>
         </div>
       </ul>
+      <div className="hamburger">
+      <FiMenu onClick={handleOpenBurger}/>
+      </div>
+      (open&&)
     </nav>
   );
 }

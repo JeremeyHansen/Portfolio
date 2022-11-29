@@ -120,23 +120,23 @@
     .home-contents h1{
         position: fixed;
         font-size: 2.7rem;
-        margin-top: 55%;
+        margin-top: 50%;
     }
     .home-contents h5{
         position: fixed;
-        margin-top: 45%;
+        margin-top: 50%;
         font-size: 1rem;
     }
     .home-text h3{
         position: fixed;
-        margin-top: 75%;
+        margin-top: 70%;
         font-size: .8rem;
         width: 250px;
         text-align: left;
     }
     .home-text p{
         position: fixed;
-        margin-top: 90%;
+        margin-top: 85%;
         font-size: .7rem;
         width: 250px;
     }

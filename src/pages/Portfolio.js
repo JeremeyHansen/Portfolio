@@ -10,6 +10,9 @@ import NotefulPopup from "./Noteful.js";
 import { useState } from "react";
 import { GoMarkGithub } from "react-icons/go";
 import Brewery from "../brewery.jpg";
+import WeSearch from "../wesearch.mp4"
+import { motion, AnimatePresence } from "framer-motion"
+
 
 export default function Portfolio() {
   const [openFlatify, setOpenFlatify] = useState(false);
@@ -126,6 +129,7 @@ export default function Portfolio() {
         </div>
         <div className="portfolio-cards">
           <video
+          src={WeSearch}
           loop
           autoPlay
           muted

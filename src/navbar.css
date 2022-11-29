@@ -134,7 +134,9 @@ right: 666.5px;
 margin-top: 35px;    
 background-color: transparent;
 }
-
+.hamburger{
+    display: none;
+}
 }
 
 @media only screen and (max-width: 480px) {
@@ -144,6 +146,10 @@ background-color: transparent;
     .nav li{
         visibility: hidden;
         font-size: .1rem;
+    }
+
+    .hamburger{
+        color: white;
     }
 
 }
