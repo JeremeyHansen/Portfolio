@@ -1,6 +1,3 @@
-import { GoMarkGithub } from "react-icons/go";
-import { BsLinkedin } from "react-icons/bs";
-
 export default function Footer() {
   return (
     <div className="footer">
