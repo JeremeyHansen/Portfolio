@@ -18,6 +18,11 @@ export default function Portfolio() {
   const [openOnlyJams, setOpenOnlyJams] = useState(false);
   const [openNoteful, setOpenNoteful] = useState(false);
   const [openWeSearch, setOpenWeSearch] = useState(false);
+  const [flatifyTech, setFlatifyTech] = useState(false);
+  const [onlyJamsTech, setOnlyJamsTech] = useState(false);
+  const [notefulTech, setNotefulTech] = useState(false);
+  const [weSearchTech, setWeSearcTech] = useState(false);
+  const [whatsBrewinTech, setWhatsBrewinTech] = useState(false);
 
 
   const handleOpenFlatify = () => {
@@ -35,6 +40,7 @@ export default function Portfolio() {
   const handleOpenWeSearch = () => {
     setOpenWeSearch(true);
   };
+
   return (
     <div>
       <div className="typewriter-container">
@@ -49,7 +55,8 @@ export default function Portfolio() {
           <video
             src={OnlyJams}
             loop
-            
+            autoPlay
+            playsinline
             muted
             onClick={handleOpenOnlyJams}
           ></video>
@@ -62,21 +69,22 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p>
-            As a musician, I've realized the social media realm lacks a platform
+          <p onClick={() => setOnlyJamsTech(!onlyJamsTech)} >
+          {onlyJamsTech ? "Technologies Used: React, Ruby, Rails, PostgreSql, CSS" : `As a musician, I've realized the social media realm lacks a platform
             for users to share content solely based on music. OnlyJams is here
             to that solve problem by offering an application for users to send
             the music they love to their friends and the world. Key features:
             view, post, like, or save Jams, a friend searcher to add new
             friends, user authentication and authorization, and a built in
-            messenger system.
+            messenger system.`}
           </p>
         </div>
         <div className="portfolio-cards">
           <video
             src={Noteful}
             loop
-            
+            autoPlay
+            playsinline
             muted
             onClick={handleOpenNoteful}
           ></video>
@@ -89,22 +97,23 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p>
-            Noteful was designed to help solve the problem of missing important
+          <p onClick={() => setNotefulTech(!notefulTech)}>
+          {notefulTech ? "Technologies Used: React, Ruby, Rails, PostgreSql, CSS" : `Noteful was designed to help solve the problem of missing important
             information. Noteful grants users the ability to create and
             subscribe to groups where they can view notes from classmates,
             co-workers/colleagues or whomever else is sharing relative
             information. Noteful offers collaborative groups where you can pick
             up where others left off. Key features: user authentication and
             authorization, create and subscribe to groups, and to post, edit, or
-            delete notes.
+            delete notes.`}
           </p>
         </div>
         <div className="portfolio-cards">
           <video
             src={Flatify}
             loop
-            
+            autoPlay
+            playsinline
             muted
             onClick={handleOpenFlatify}
           ></video>
@@ -117,20 +126,21 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p>
-            A Spotify-inspired music application created to simplify the process
+          <p onClick={() => setFlatifyTech(!flatifyTech)}>
+            { flatifyTech ? "Technologies Used: React, Spotify's API, REST Design, CSS" : `A Spotify-inspired music application created to simplify the process
             of finding music and creating playlists. Taking advantage of
             Spotify's API, we built a fully functional music streaming
             application to search music and create and edit playlists that will
             persist to your Spotify account. Flatify also has a built in audio
-            player to play whatever music you desire.{" "}
+            player to play whatever music you desire.`}
           </p>
         </div>
         <div className="portfolio-cards">
           <video
           src={WeSearch}
           loop
-          
+          autoPlay
+          playsinline
           muted
           onClick={handleOpenWeSearch}
           ></video>
@@ -143,11 +153,11 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p>
-            We Search is an Atlanta based Yelp mock up. Users can sign up and
+          <p onClick={() => setWeSearcTech(!weSearchTech)}>
+            {(weSearchTech) ? "Technologies Used: React, Ruby, SQLite3, CSS": `We Search is an Atlanta based Yelp mock up. Users can sign up and
             add whatever places they like as well as leave reviews on previously
             listed places. Key features: backend REST API, JWT user
-            authentication, full CRUD on two models.{" "}
+            authentication, full CRUD on two models.`}
           </p>
         </div>
         <div className="portfolio-cards">
@@ -161,12 +171,12 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p>
-            What's Brewin'? is a single page application to search and find
+          <p onClick={() => setWhatsBrewinTech(!whatsBrewinTech)}>
+            {whatsBrewinTech ? "Technologies used: Vanilla Javascript, HTML, CSS, Public API" : `What's Brewin'? is a single page application to search and find
             local breweries in your area. A user can input what city they're
             located in to get a list of breweries in their area. They also are
             granted the ability to comment on the breweries as well as delete
-            ones that they don't like or have already been to.
+            ones that they don't like or have already been to.`}
           </p>
         </div>
       </div>

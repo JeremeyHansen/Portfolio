@@ -1,3 +1,6 @@
+@media only screen and (max-width: 2000px) {
+
+
 .popup {
     position: absolute;
     top: 0;
@@ -63,4 +66,15 @@
 .popup-inner h4{
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+    .popup-inner h4{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        display: contents;
+    }
 }
