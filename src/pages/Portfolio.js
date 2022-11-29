@@ -1,4 +1,4 @@
-import Flatify from "../flatimage.jpg";
+import Flatify from "../Flatiify.mp4";
 import OnlyJams from "../onlyjamsimg.jpg";
 import Noteful from "../notefulimg.jpg";
 import "../css/portfolio.css";
@@ -102,11 +102,12 @@ export default function Portfolio() {
 
         </div>
         <div className="portfolio-cards">
-          <img
+          <video
             src={Flatify}
             alt="Flatify"
+            muted
             onClick={handleOpenFlatify}
-            ></img>
+            ></video>
           <h2>
             Flatify
             <a
