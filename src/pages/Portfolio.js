@@ -49,7 +49,7 @@ export default function Portfolio() {
           <video
             src={OnlyJams}
             alt="Only Jams"
-            muted
+            autoPlay
             loop
             webkit-playsinline 
             playsinline
@@ -79,7 +79,7 @@ export default function Portfolio() {
         </div>
         <div className="portfolio-cards">
           <video
-            muted          
+            autoPlay          
             loop
             webkit-playsinline 
             playsinline
@@ -114,7 +114,7 @@ export default function Portfolio() {
           <video
             src={Flatify}
             alt="Flatify"
-            muted
+            autoPlay
             loop
             webkit-playsinline 
             playsinline
@@ -143,7 +143,7 @@ export default function Portfolio() {
         </div>
         <div className="portfolio-cards">
           <video
-            muted
+            autoPlay
             loop
             webkit-playsinline 
             playsinline
