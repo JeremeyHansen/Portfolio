@@ -1,4 +1,4 @@
-import Flatify from "../flatifyimg.jpg";
+import Flatify from "../flatimage.jpg";
 import OnlyJams from "../onlyjamsimg.jpg";
 import Noteful from "../notefulimg.jpg";
 import "../css/portfolio.css";
