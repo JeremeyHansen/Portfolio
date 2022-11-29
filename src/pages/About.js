@@ -1,17 +1,11 @@
 import "../css/about.css";
 import image from "../profile.JPG";
-import Typewriter from "typewriter-effect";
+import 'animate.css';
 
 export default function About() {
   return (
-    <>
-      <div className="typewriter-container">
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter.typeString("About Me").start();
-          }}
-        />
-      </div>
+    <div className="about-page">
+      <h2 class="animate__animated animate__rubberBand">About Me</h2>
       <div className="about-container">
         <img className="profile-pic" src={image} alt="Jeremey Hansen"></img>
         <div className="about-section">
@@ -32,6 +26,6 @@ export default function About() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }

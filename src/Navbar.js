@@ -127,7 +127,7 @@ function CustomLink({ to, children, ...props }) {
   const resolvedPath = useResolvedPath(to);
   const isActive = useMatch({ path: resolvedPath.pathname, end: true });
   return (
-    <li className={isActive ? "active" : ""}>
+    <li className={isActive ? "active" : "hvr-underline-from-right"}>
       <Link to={to}>{children}</Link>
     </li>
   );

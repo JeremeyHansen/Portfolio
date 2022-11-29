@@ -73,16 +73,45 @@ body {
 .com-container{
     text-align: center;
 }
-
+/* 
 .nav li:hover{
     color: rgb(255, 255, 255);
     border-radius: 6px;
-    /* text-shadow: 0 0 10px white, 0 0 20px rgb(181, 229, 255), 0 0 40px rgb(91, 240, 251); */
+    text-shadow: 0 0 10px white, 0 0 20px rgb(181, 229, 255), 0 0 40px rgb(91, 240, 251);
     text-decoration: underline;
     padding-left: 10px;
     padding-right: 10px;
 
-}
+} */
+
+.hvr-underline-from-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+    height: 2px;
+    -webkit-transition-property: left;
+    transition-property: left;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-right:hover:before, .hvr-underline-from-right:focus:before, .hvr-underline-from-right:active:before {
+    left: 0;
+  }
 
 .nav-numbers{
     padding-right: 6px;

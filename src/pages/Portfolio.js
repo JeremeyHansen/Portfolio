@@ -1,7 +1,7 @@
 import Typewriter from "typewriter-effect";
-import Flatify from "../Flatiify.mp4";
-import OnlyJams from "../OnlyJams.mp4";
-import Noteful from "../Noteful.mp4";
+import Flatify from "../flatifyimg.jpg";
+import OnlyJams from "../onlyjamsimg.jpg";
+import Noteful from "../notefulimg.jpg";
 import "../css/portfolio.css";
 import OnlyJamsPopup from "./OnlyJams.js";
 import FlatifyPopup from "./Flatify.js";
@@ -10,7 +10,7 @@ import NotefulPopup from "./Noteful.js";
 import { useState } from "react";
 import { GoMarkGithub } from "react-icons/go";
 import Brewery from "../brewery.jpg";
-import WeSearch from "../wesearch.mp4"
+import WeSearch from "../wesearchimg.jpg";
 
 
 export default function Portfolio() {
@@ -44,22 +44,15 @@ export default function Portfolio() {
   return (
     <div>
       <div className="typewriter-container">
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter.typeString("Portfolio").start();
-          }}
-        />
+        <h2 class="animate__animated animate__rubberBand">Projects</h2>
       </div>
       <div className="card-container">
         <div className="portfolio-cards">
-          <video
+          <img
             src={OnlyJams}
-            loop
-            autoPlay
-            playsinline
-            muted
+            alt="Only Jams"
             onClick={handleOpenOnlyJams}
-          ></video>
+          ></img>
           <h2>
             OnlyJams
             <a
@@ -78,16 +71,15 @@ export default function Portfolio() {
             friends, user authentication and authorization, and a built in
             messenger system.`}
           </p>
+          <p>Click image for video demo</p>
+
         </div>
         <div className="portfolio-cards">
-          <video
+          <img
             src={Noteful}
-            loop
-            autoPlay
-            playsinline
-            muted
+         alt="Noteful"
             onClick={handleOpenNoteful}
-          ></video>
+          ></img>
           <h2>
             Noteful
             <a
@@ -107,22 +99,21 @@ export default function Portfolio() {
             authorization, create and subscribe to groups, and to post, edit, or
             delete notes.`}
           </p>
+          <p className="video-demo">Click image for video demo</p>
+
         </div>
         <div className="portfolio-cards">
-          <video
+          <img
             src={Flatify}
-            loop
-            autoPlay
-            playsinline
-            muted
+            alt="Flatify"
             onClick={handleOpenFlatify}
-          ></video>
+            ></img>
           <h2>
             Flatify
             <a
               className="git-logo"
               href="https://github.com/JeremeyHansen/flatify2"
-            >
+              >
               <GoMarkGithub />
             </a>
           </h2>
@@ -134,16 +125,14 @@ export default function Portfolio() {
             persist to your Spotify account. Flatify also has a built in audio
             player to play whatever music you desire.`}
           </p>
+            <p className="video-demo">Click image for video demo</p>
         </div>
         <div className="portfolio-cards">
-          <video
+          <img
           src={WeSearch}
-          loop
-          autoPlay
-          playsinline
-          muted
+alt="We Search."
           onClick={handleOpenWeSearch}
-          ></video>
+          ></img>
           <h2>
             We Search.
             <a
@@ -159,6 +148,8 @@ export default function Portfolio() {
             listed places. Key features: backend REST API, JWT user
             authentication, full CRUD on two models.`}
           </p>
+          <p className="video-demo">Click image for video demo</p>
+
         </div>
         <div className="portfolio-cards">
           <img src={Brewery} alt="What's Brewin'?"></img>
