@@ -1,4 +1,3 @@
-import Typewriter from "typewriter-effect";
 import Flatify from "../flatifyimg.jpg";
 import OnlyJams from "../onlyjamsimg.jpg";
 import Noteful from "../notefulimg.jpg";
