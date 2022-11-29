@@ -49,6 +49,10 @@ export default function Portfolio() {
             src={OnlyJams}
             alt="Only Jams"
             muted
+            autoPlay
+            loop
+            webkit-playsinline 
+            playsinline
             onClick={handleOpenOnlyJams}
           ></video>
           <h2>
@@ -75,7 +79,11 @@ export default function Portfolio() {
         </div>
         <div className="portfolio-cards">
           <video
-            muted
+            muted          
+            autoPlay
+            loop
+            webkit-playsinline 
+            playsinline
             src={Noteful}
             alt="Noteful"
             onClick={handleOpenNoteful}
@@ -108,6 +116,10 @@ export default function Portfolio() {
             src={Flatify}
             alt="Flatify"
             muted
+            autoPlay
+            loop
+            webkit-playsinline 
+            playsinline
             onClick={handleOpenFlatify}
           ></video>
           <h2>
@@ -134,6 +146,10 @@ export default function Portfolio() {
         <div className="portfolio-cards">
           <video
             muted
+            autoPlay
+            loop
+            webkit-playsinline 
+            playsinline
             src={WeSearch}
             alt="We Search."
             onClick={handleOpenWeSearch}
