@@ -1,6 +1,6 @@
-import Flatify from "../Flatiify.mp4";
-import OnlyJams from "../OnlyJams.mp4";
-import Noteful from "../Noteful.mp4";
+import FlatifyImg from "../flatimage.jpg";
+import OnlyJams from "../onlyjamsimg.jpg";
+import Noteful from "../notefulimg.jpg";
 import "../css/portfolio.css";
 import OnlyJamsPopup from "./OnlyJams.js";
 import FlatifyPopup from "./Flatify.js";
@@ -9,7 +9,7 @@ import NotefulPopup from "./Noteful.js";
 import { useState } from "react";
 import { GoMarkGithub } from "react-icons/go";
 import Brewery from "../brewery.jpg";
-import WeSearch from "../wesearch.mp4";
+import WeSearch from "../wesearchimg.jpg";
 
 
 export default function Portfolio() {
@@ -46,16 +46,16 @@ export default function Portfolio() {
       </div>
       <div className="card-container">
         <div className="portfolio-cards">
-          <video
+          <img
             src={OnlyJams}
             alt="Only Jams"
-            autoPlay
-            loop
-            webkit-playsinline 
-            playsinline
-            nofullscreen
+            // autoPlay
+            // loop
+            // webkit-playsinline 
+            // playsinline
+            // nofullscreen
             onClick={handleOpenOnlyJams}
-          ></video>
+          ></img>
           <h2>
             OnlyJams
             <a
@@ -78,15 +78,15 @@ export default function Portfolio() {
           </p>
         </div>
         <div className="portfolio-cards">
-          <video
-            autoPlay          
-            loop
-            webkit-playsinline 
-            playsinline
+          <img
+            // autoPlay          
+            // loop
+            // webkit-playsinline 
+            // playsinline
             src={Noteful}
             alt="Noteful"
             onClick={handleOpenNoteful}
-          ></video>
+          ></img>
           <h2>
             Noteful
             <a
@@ -110,15 +110,15 @@ export default function Portfolio() {
           </p>
         </div>
         <div className="portfolio-cards">
-          <video
-            src={Flatify}
+          <img
+            src={FlatifyImg}
             alt="Flatify"
-            autoPlay
-            loop
-            webkit-playsinline 
-            playsinline
+            // autoPlay
+            // loop
+            // webkit-playsinline 
+            // playsinline
             onClick={handleOpenFlatify}
-          ></video>
+          ></img>
           <h2>
             Flatify
             <a
@@ -140,15 +140,15 @@ export default function Portfolio() {
           </p>
         </div>
         <div className="portfolio-cards">
-          <video
-            autoPlay
-            loop
-            webkit-playsinline 
-            playsinline
+          <img
+            // autoPlay
+            // loop
+            // webkit-playsinline 
+            // playsinline
             src={WeSearch}
             alt="We Search."
             onClick={handleOpenWeSearch}
-          ></video>
+          ></img>
           <h2>
             We Search.
             <a
