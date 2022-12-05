@@ -11,7 +11,6 @@ import { GoMarkGithub } from "react-icons/go";
 import Brewery from "../brewery.jpg";
 import WeSearch from "../wesearchimg.jpg";
 
-
 export default function Portfolio() {
   const [openFlatify, setOpenFlatify] = useState(false);
   const [openOnlyJams, setOpenOnlyJams] = useState(false);
@@ -45,16 +44,15 @@ export default function Portfolio() {
         <h2 class="animate__animated animate__rubberBand">Projects</h2>
       </div>
       <div className="card-container">
-        <div className="portfolio-cards">
+        <div className="portfolio-cards" onClick={handleOpenOnlyJams}>
           <img
             src={OnlyJams}
             alt="Only Jams"
             // autoPlay
             // loop
-            // webkit-playsinline 
+            // webkit-playsinline
             // playsinline
             // nofullscreen
-            onClick={handleOpenOnlyJams}
           ></img>
           <h2>
             OnlyJams
@@ -77,15 +75,14 @@ export default function Portfolio() {
             messenger system.`}
           </p>
         </div>
-        <div className="portfolio-cards">
+        <div className="portfolio-cards" onClick={handleOpenNoteful}>
           <img
-            // autoPlay          
+            // autoPlay
             // loop
-            // webkit-playsinline 
+            // webkit-playsinline
             // playsinline
             src={Noteful}
             alt="Noteful"
-            onClick={handleOpenNoteful}
           ></img>
           <h2>
             Noteful
@@ -109,15 +106,14 @@ export default function Portfolio() {
             delete notes.`}
           </p>
         </div>
-        <div className="portfolio-cards">
+        <div className="portfolio-cards"             onClick={handleOpenFlatify}>
           <img
             src={FlatifyImg}
             alt="Flatify"
             // autoPlay
             // loop
-            // webkit-playsinline 
+            // webkit-playsinline
             // playsinline
-            onClick={handleOpenFlatify}
           ></img>
           <h2>
             Flatify
@@ -139,15 +135,15 @@ export default function Portfolio() {
             player to play whatever music you desire.`}
           </p>
         </div>
-        <div className="portfolio-cards">
+        <div className="portfolio-cards"             onClick={handleOpenWeSearch}
+>
           <img
             // autoPlay
             // loop
-            // webkit-playsinline 
+            // webkit-playsinline
             // playsinline
             src={WeSearch}
             alt="We Search."
-            onClick={handleOpenWeSearch}
           ></img>
           <h2>
             We Search.
