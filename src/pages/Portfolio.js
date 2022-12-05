@@ -65,7 +65,7 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p onClick={() => setOnlyJamsTech(!onlyJamsTech)}>
+          <p className="description" onClick={() => setOnlyJamsTech(!onlyJamsTech)}>
             {onlyJamsTech
               ? "Technologies Used: React, Ruby, Rails, PostgreSql, CSS"
               : `As a musician, I've realized the social media realm lacks a platform
@@ -75,6 +75,7 @@ export default function Portfolio() {
             view, post, like, or save Jams, a friend searcher to add new
             friends, user authentication and authorization, and a built in
             messenger system.`}
+            <p className="video-text">Click Image for Demo.</p>
           </p>
         </div>
         <div className="portfolio-cards">
@@ -96,7 +97,7 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p onClick={() => setNotefulTech(!notefulTech)}>
+          <p className="description" onClick={() => setNotefulTech(!notefulTech)}>
             {notefulTech
               ? "Technologies Used: React, Ruby, Rails, PostgreSql, CSS"
               : `Noteful was designed to help solve the problem of missing important
@@ -108,6 +109,7 @@ export default function Portfolio() {
             authorization, create and subscribe to groups, and to post, edit, or
             delete notes.`}
           </p>
+          <p className="video-text">Click Image for Demo.</p>
         </div>
         <div className="portfolio-cards">
           <img
@@ -128,7 +130,7 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p onClick={() => setFlatifyTech(!flatifyTech)}>
+          <p className="description" onClick={() => setFlatifyTech(!flatifyTech)}>
             {flatifyTech
               ? "Technologies Used: React, Spotify's API, REST Design, CSS"
               : `A Spotify-inspired music application created to simplify the process
@@ -138,6 +140,8 @@ export default function Portfolio() {
             persist to your Spotify account. Flatify also has a built in audio
             player to play whatever music you desire.`}
           </p>
+          <p className="video-text">Click Image for Demo.</p>
+
         </div>
         <div className="portfolio-cards">
           <img
@@ -158,7 +162,7 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p onClick={() => setWeSearcTech(!weSearchTech)}>
+          <p className="description" onClick={() => setWeSearcTech(!weSearchTech)}>
             {weSearchTech
               ? "Technologies Used: React, Ruby, SQLite3, CSS"
               : `We Search is an Atlanta based Yelp mock up. Users can sign up and
@@ -166,6 +170,8 @@ export default function Portfolio() {
             listed places. Key features: backend REST API, JWT user
             authentication, full CRUD on two models.`}
           </p>
+          <p className="video-text">Click Image for Demo.</p>
+
         </div>
         <div className="portfolio-cards">
           <img src={Brewery} alt="What's Brewin'?"></img>
@@ -178,7 +184,7 @@ export default function Portfolio() {
               <GoMarkGithub />
             </a>
           </h2>
-          <p onClick={() => setWhatsBrewinTech(!whatsBrewinTech)}>
+          <p className="description" onClick={() => setWhatsBrewinTech(!whatsBrewinTech)}>
             {whatsBrewinTech
               ? "Technologies used: Vanilla Javascript, HTML, CSS, Public API"
               : `What's Brewin'? is a single page application to search and find

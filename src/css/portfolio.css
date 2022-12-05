@@ -52,7 +52,11 @@
 .video-demo{
     color: aqua;
 }
-.portfolio-cards p{
+.video-text{
+    display: none;
+    color: chartreuse;
+}
+.description{
     color: white;
     margin-left: 17px;
     margin-right: 17px;
@@ -88,6 +92,11 @@
         margin-bottom: 20px;
     }
 
+    .video-text{
+        display: block;
+        color: chartreuse;
+        font-family: monospace;
+    }
     .portfolio-cards{
         border-style: solid;
         border-radius: 15px;
@@ -99,5 +108,6 @@
         margin-bottom: 14px;
         margin-left: 5px; 
     }
+
 
 }
