@@ -71,6 +71,12 @@
     margin-left: 20px;
 }
 
+.link{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
 .portfolio-cards img{
     width: fit-content;
     width: 85%;

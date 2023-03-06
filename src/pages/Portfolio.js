@@ -10,6 +10,8 @@ import { useState } from "react";
 import { GoMarkGithub } from "react-icons/go";
 import Brewery from "../brewery.jpg";
 import WeSearch from "../wesearchimg.JPG";
+import BassBuddyPopup from './BassBuddy.js'
+import BassBuddy from '../BassBuddy.jpg';
 
 
 export default function Portfolio() {
@@ -22,10 +24,16 @@ export default function Portfolio() {
   const [notefulTech, setNotefulTech] = useState(false);
   const [weSearchTech, setWeSearcTech] = useState(false);
   const [whatsBrewinTech, setWhatsBrewinTech] = useState(false);
+  const [ openBassBuddy, setOpenBassBuddy ] = useState(false);
+  const [ bassBuddyTech, setBassBuddyTech] = useState(false);
 
   const handleOpenFlatify = () => {
     setOpenFlatify(true);
   };
+
+  const handleOpenBassBuddy = () => {
+    setOpenBassBuddy(true);
+  }
 
   const handleOpenOnlyJams = () => {
     setOpenOnlyJams(true);
@@ -45,6 +53,34 @@ export default function Portfolio() {
         <h2 class="animate__animated animate__rubberBand">Projects</h2>
       </div>
       <div className="card-container">
+      <div className="portfolio-cards">
+          <img
+            src={BassBuddy}
+            alt="Bass Buddy"
+            // autoPlay
+            // loop
+            // webkit-playsinline 
+            // playsinline
+            // nofullscreen
+            onClick={handleOpenBassBuddy}
+          ></img>
+          <h2>
+            OnlyJams
+            <a
+              className="git-logo"
+              href="https://github.com/JeremeyHansen/bassbuddy"
+            >
+              <GoMarkGithub />
+            </a>
+          </h2>
+          <p className="description" onClick={() => setBassBuddyTech(!bassBuddyTech)}>
+            {bassBuddyTech
+              ? "Technologies Used: React, Google Map's API, CSS"
+              : `An end to end responsive application built and designed to give user's a fun experience to find local EDM concerts in their respective cities. User's have the ability to search through the database and find shows on the map in their city.`}
+            <p className="video-text">Click Image for Demo.</p>
+          </p>
+          <a href="https://bassbuddy.xyz" className="link">Bass Buddy Website</a>
+        </div>
         <div className="portfolio-cards">
           <img
             src={OnlyJams}
@@ -199,6 +235,8 @@ export default function Portfolio() {
       {openNoteful && <NotefulPopup setOpenNoteful={setOpenNoteful} />}
       {openFlatify && <FlatifyPopup setOpenFlatify={setOpenFlatify} />}
       {openWeSearch && <WeSearchPopup setOpenWeSearch={setOpenWeSearch} />}
+      {openBassBuddy && <BassBuddyPopup setOpenBassBuddy={setOpenBassBuddy} />}
+
     </div>
   );
 }
