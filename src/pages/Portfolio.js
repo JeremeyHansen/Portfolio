@@ -65,7 +65,7 @@ export default function Portfolio() {
             onClick={handleOpenBassBuddy}
           ></img>
           <h2>
-            OnlyJams
+            Bass Buddy
             <a
               className="git-logo"
               href="https://github.com/JeremeyHansen/bassbuddy"
