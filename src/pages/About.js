@@ -12,11 +12,11 @@ export default function About() {
           <h1>Jeremey Hansen.</h1>
           <p>
             Hello everyone! My name is Jeremey Hansen. I am a dedicated musician
-            and an avid outdoor enthusiast currently residing in Charlotte,
-            North Carolina! I have a passion for building things, and love the
+            and an avid outdoor enthusiast currently residing in San Diego,
+            California! I have a passion for building things, and love the
             intellectual challenges required in the tech field. I am currently
             building full-stack web applications using JavaScript, HTML/CSS,
-            React, SQL, Ruby, and Ruby on Rails. I've obtained strong
+            React, SQL, Ruby, PHP, Python, Laravel, Native, Swift and Ruby on Rails. I've obtained strong
             problem-solving, communication, and collaboration skills through
             learning web development, plus previous experience in marketing,
             event coordination, music, and management. My inbox is always open!
