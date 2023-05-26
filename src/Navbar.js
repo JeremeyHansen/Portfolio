@@ -14,10 +14,8 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        <span className="title-period">{"{"}</span>&nbsp;
         <span className="site-title-lit">JH</span>
         <span className="title-period"></span>&nbsp;{" "}
-        <span className="title-period"> {" }"}</span>
       </Link>
       <ul className="page-link">
         <CustomLink to="/about">

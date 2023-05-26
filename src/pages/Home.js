@@ -11,14 +11,16 @@ export default function Home() {
       <h1 class="animate__animated animate__rubberBand">Jeremey Hansen.</h1>
       <div className="home-text">
       <h3>I build things on the internet.</h3>
+      <div className="home-para">
       <p>
-        I am a full stack software engineer based out of Charlotte, North
-        Carolina. I specialize in the planning, designing and building of exceptional
+        I am a full stack engineer based out of San Diego, California. 
+        I specialize in the planning, designing and building of exceptional
         websites, applications, and everything in between.
       </p>
       <Link to="/contact">
       <button className="contact-btn">Message Me</button>     
       </Link>
+      </div>
       </div>
       </div>
     </div>

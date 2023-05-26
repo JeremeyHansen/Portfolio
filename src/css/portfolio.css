@@ -1,122 +1,145 @@
 @media only screen and (max-width: 2000px) {
-
-
-.card-container{
+  .port-video {
+    margin-top: 50px;
     display: flex;
-    margin-top: 45px;
-    margin-left: 30px;
-    margin-bottom: 250px;
-    overflow-x: scroll;
-
-}
-
-.portfolio-cards{
-    display: block;
-    border-style: solid;
-    border-radius: 15px;
+  }
+  .port-video2 {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .port-video video {
+    width: 60%;
+    border-color: #55596a;
     border-width: 5px;
-    border-color: white;
-    height: 65vh;
-    width: 25%;
-    min-width: 25%;
-    margin-left: 20px;
-    margin-right: 10px;
-    transition: linear .3s;
-    background-color: rgba(107, 192, 252, 0.3);
-    overflow-x: scroll;
-}
-
-.portfolio-cards video{
-    width: fit-content;
-    width: 85%;
-    margin-top: 30px;
-    border-radius: 10px;
     border-style: solid;
-    border-width: 1px;
+    border-radius: 10px;
+    height: fit-content;
+    margin-right: 180px;
+  }
+  .port-video2 video {
+    width: 40%;
     border-color: white;
-    transition: linear .3s;
-}
-.portfolio-cards video:hover{
-    cursor: pointer;
-}
-.portfolio-cards img:hover{
-    cursor: pointer;
-}
-
-.portfolio-cards h2{
-    color: white;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
-    text-transform: uppercase;
-}
-.video-demo{
-    color: aqua;
-}
-.video-text{
-    /* display: none; */
-    color: chartreuse;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: small;
-}
-.description{
-    color: white;
-    margin-left: 17px;
-    margin-right: 17px;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+    margin-right: 100px;
+    height: fit-content;
+  }
+  .bb-text {
     font-family: monospace;
-    cursor: pointer;
-}
-
-.git-logo{
-    color: white;
-    margin-left: 20px;
-}
-
-.link{
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-}
-
-.portfolio-cards img{
-    width: fit-content;
-    width: 85%;
-    height: 150px;
-    margin-top: 30px;
-    border-radius: 10px;
+    color: #edf5e1;
+    width: 300px;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 10px 30px 10px 50px;
+    margin-right: 50px;
+    margin-top: 70px;
     border-style: solid;
-    border-width: 1px;
-    border-color: white;
-    transition: linear .3s;
-}
-.portfolio-cards video:hover{
+    border-width: 2px 8px 2px 0;
+    border-color: #55596a;
+    border-radius: 0 15px 15px 0px;
+
+  }
+  .oj-text {
+    width: 450px;
+    font-family: monospace;
+    color: #edf5e1;
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  .port-title {
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 1100px;
+    margin-right: 1250px;
+    margin-top: 60px;
+    border-style: solid;
+    color: #55596a;
+    border-width: 0 0px 3px 0;
+    background: linear-gradient(to right, #edf5e1, #5cdb95);
+  }
+  .port-title2 {
+    text-align: right;
+    color: #55596a;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 80%;
+    margin-top: 90px;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    border-radius: 0 0 15px 0px;
+    background: #edf5e1;
+    padding-right: 100px;
+  }
+  .phone-container {
+    margin-left: 100px;
+  }
+  .phone1 {
+    width: 18%;
+    margin-left: 700px;
+  }
+  .phone2 {
+    width: 38%;
+    margin-left: 300px;
+  }
+  .phone3 {
+    width: 18%;
+    margin-left: 200px;
+  }
+  .bb2-container {
+    margin-left: 100px;
+  }
+  .bb-button a {
+    text-decoration: none;
+    font-family: monospace;
+    color: #edf5e1;
+  }
+  .bb-button {
+    border: none;
+    border-style: none;
+    border-style: solid;
+    border-color: #edf5e1;
+    border-width: 3px;
+    border-radius: 5px;
+    padding: 5px 55px 5px 55px;
+    background-color: #55596a;
+    margin-left: 40px;
+    margin-top: 30px;
+    transition: 0.3s;
+  }
+  .bb-button:hover {
     cursor: pointer;
-}
+    background-color: #edf5e1;
+    border-color: #05386b;
+    color: #05386b;
+    box-shadow: #05386b 0 0 0 7px;
+  }
+
+  .bb-button:hover a {
+    color: #05386b;
+  }
+  .bb-link a {
+    color: #edf5e1;
+    font-size: 7rem;
+    text-decoration: none;
+  }
+  .bb-link {
+    margin-left: 900px;
+    margin-top: 150px;
+  }
+  .oj-link a {
+    color: #edf5e1;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+  .oj-link {
+    margin-left: 200px;
+    margin-top: 50px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
-    .card-container{
-        display: block;
-        margin-top: 45px;
-        margin-left: 30px;
-        margin-bottom: 20px;
-    }
-
-    .video-text{
-        display: block;
-        color: chartreuse;
-        font-family: monospace;
-    }
-    .portfolio-cards{
-        border-style: solid;
-        border-radius: 15px;
-        border-width: 5px;
-        border-color: white;
-        height: fit-content;
-        width: 90%;
-        background-color: rgba(107, 192, 252, 0.3);
-        margin-bottom: 14px;
-        margin-left: 5px; 
-    }
-
-
 }

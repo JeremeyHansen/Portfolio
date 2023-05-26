@@ -1,0 +1,31 @@
+.flat-text {
+    width: 450px;
+    font-family: monospace;
+    color: #edf5e1;
+    font-size: 1.2rem;
+    margin-left: 130px;
+  }
+
+  .flat-title {
+    text-align: right;
+    color: #55596a;
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+    width: 80%;
+    margin-top: 90px;
+    border-style: solid;
+    border-width: 0 3px 3px 0;
+    border-radius: 0 0 15px 0px;
+    background: #f5f1e1;
+    padding-right: 100px;
+  }
+  .flat-link a {
+    color: #edf5e1;
+    font-size: 3rem;
+    text-decoration: none;
+  }
+  .flat-link {
+    margin-left: 320px;
+    margin-top: 50px;
+  }
