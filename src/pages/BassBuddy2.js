@@ -11,17 +11,17 @@ export default function BassBuddy() {
         <ParallaxLayer speed={2.3}>
           {" "}
           <div>
-          <img className="phone2" src={Phone2}></img>
+          <img className="phone2" alt="phone view" src={Phone2}></img>
           </div>
         </ParallaxLayer>
         <ParallaxLayer speed={.6} offset={.1}>
           {" "}
-          <img className="phone3" src={Phone3}></img>
+          <img className="phone3" alt="phone view" src={Phone3}></img>
         </ParallaxLayer>
         <ParallaxLayer offset={.1} speed={1.9}>
           {" "}
           <div>
-          <img className="phone1" src={Phone1}></img>
+          <img className="phone1" alt="phone view" src={Phone1}></img>
           </div>
         </ParallaxLayer>
       </Parallax>

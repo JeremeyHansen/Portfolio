@@ -8,10 +8,6 @@
 }
 .porthome-container:hover .smile{
     border-radius: 70%;
-    width: 600px;
-    margin-left: 350px;
-
-
 }
 
 .arrow-class {
@@ -50,10 +46,9 @@
 .smile{
     border-style: solid;
     border-width: 0 0 8px 0;
-    width: 500px;
-    margin-left: 400px;
+    width: 50%;
+    margin-left: 25%;
     margin-top: 40px;
-    /* animation: smile1 2s infinite; */
     height: 50px;
     transition: 1s;
 }

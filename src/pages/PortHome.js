@@ -8,15 +8,12 @@ export default function PortHome() {
       <div className="arrow-container">
       <div class="arrow bounce2">
         <FaAngleDoubleDown />
-        <a class="fa fa-arrow-down fa-2x arrow-class" href="#"></a>
       </div>
       <div class="arrow bounce arrow2">
         <BsArrowDown className="arrow2"/>
-        <a class="fa fa-arrow-down fa-2x  arrow-class" href="#"></a>
       </div>
       <div class="arrow bounce2">
         <FaAngleDoubleDown />
-        <a class="fa fa-arrow-down fa-2x arrow-class" href="#"></a>
       </div>
       </div>
       <div className="smile"></div>

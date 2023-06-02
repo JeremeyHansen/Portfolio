@@ -3,7 +3,7 @@
     font-family: monospace;
     color: #edf5e1;
     font-size: 1.2rem;
-    margin-left: 130px;
+    margin-left: auto;
   }
 
   .flat-title {
@@ -13,7 +13,6 @@
     font-family: sans-serif;
     font-weight: lighter;
     width: 80%;
-    margin-top: 90px;
     border-style: solid;
     border-width: 0 3px 3px 0;
     border-radius: 0 0 15px 0px;
@@ -26,6 +25,6 @@
     text-decoration: none;
   }
   .flat-link {
-    margin-left: 320px;
-    margin-top: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
   }

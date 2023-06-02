@@ -13,9 +13,9 @@ export default function PureQuality(){
             An application I built for a client and his pressure washing business. 
           </p>
           <div className="pq-img-container">
-            <img className="pq-phone2"src={Phone2} alt="phone image of website" />
-            <img className="pq-computer" src={Computer} alt="computer image of website" />
-            <img className="pq-phone1" src={Phone1} alt="phone image of website" />
+            <img className="pq-phone2"src={Phone2} alt="phone view of website" />
+            <img className="pq-computer" src={Computer} alt="computer view of website" />
+            <img className="pq-phone1" src={Phone1} alt="phone view of website" />
 
           </div>
           <button className="bb-button">

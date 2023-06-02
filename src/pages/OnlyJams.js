@@ -4,7 +4,7 @@ import { GoMarkGithub } from "react-icons/go";
 export default function OnlyJams() {
   return (
     <div className="oj-container">
-      <h1 className="port-title2">Only Jams.</h1>
+      <h1 className="port-title2">ONLY JAMS.</h1>
       <div className="port-video2">
         <div>
           <p className="oj-text">

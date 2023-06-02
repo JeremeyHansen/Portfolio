@@ -15,18 +15,15 @@ export default function Navbar() {
     <nav className="nav">
       <Link to="/" className="site-title">
         <span className="site-title-lit">JH</span>
-        <span className="title-period"></span>&nbsp;{" "}
+        <span className="title-period">.</span>
       </Link>
       <ul className="page-link">
         <CustomLink to="/about">
-          <span className="nav-numbers">01.</span> About Me
+          <span className="nav-numbers">01.</span> About
         </CustomLink>
         <CustomLink to="/portfolio">
           <span className="nav-numbers">02.</span>Portfolio
         </CustomLink>
-        {/* <CustomLink to="/resume">
-          <span className="nav-numbers">03.</span>Resume
-        </CustomLink> */}
         <CustomLink to="/contact">
           <span className="nav-numbers">03.</span>Contact
         </CustomLink>

@@ -12,19 +12,20 @@ body {
 
 @media only screen and (max-width: 2000px) {
   .nav {
-    font-family: monospace;
+    font-family: 'Syne';
+    font-size: .7rem;
     text-align: center;
     align-items: center;
     background: linear-gradient(to bottom right, #403F44, #1E1B32);
     border-style: solid;
-    border-color: rgb(255, 255, 255);
-    border-width: 0px 2px 0px 0px;
-    color: rgb(177, 252, 255);
+    border-color: rgb(252, 252, 252);
+    border-width: 0px 5px 0px 0px;
+    color: #edf5e1;
     display: flex;
     justify-content: space-around;
     width: 100px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -35,12 +36,13 @@ body {
   .site-title {
     font-size: 2rem;
     font-weight: bold;
-    color: rgb(134, 255, 159);
+    color: #edf5e1;
     padding: 0px;
+    writing-mode: horizontal-tb;
   }
 
   .title-period {
-    color: rgb(134, 255, 159);
+    color: #d29bf4;
   }
 
   .nav ul {
@@ -61,7 +63,7 @@ body {
   .nav li {
     transition: 0.3s linear;
     font-size: larger;
-    color: rgb(172, 172, 172);
+    color: #edf5e1;
   }
 
   .nav li.active {
@@ -87,9 +89,9 @@ body {
 
   .hvr-underline-from-right {
     display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
+    vertical-align: auto;
+    -webkit-transform: perspective(1px) translateZ(1);
+    transform: perspective(2px) translateZ(1);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
@@ -117,45 +119,15 @@ body {
   }
 
   .nav-numbers {
-    color: rgb(134, 255, 159);
+    color: #d29bf4;
     writing-mode: horizontal-tb;
     padding-bottom: 7px;
   }
 
   .site-title-lit {
-    color: rgb(134, 255, 159);
+    color: #edf5e1;
     font-weight: bold;
     outline: none;
-    animation: animate 5s linear infinite;
-    animation-direction: alternate;
-  }
-
-  @keyframes animate {
-    0%,
-    18%,
-    20%,
-    50.1%,
-    60%,
-    65%,
-    80%,
-    90.1%,
-    92% {
-      color: rgb(134, 255, 159);
-      box-shadow: none;
-    }
-    18.1%,
-    20.1%,
-    30%,
-    50%,
-    60.1%,
-    65%,
-    80.1%,
-    100% {
-      color: rgb(255, 255, 255);
-      text-shadow: 0 0 10px rgb(134, 255, 159), 0 0 20px rgb(134, 255, 159),
-        0 0 40px rgb(134, 255, 159), 0 0 80px rgb(134, 255, 159),
-        0 0 160px rgb(134, 255, 159);
-    }
   }
 
   .link-icons {
@@ -165,7 +137,7 @@ body {
   }
 
   .link-icons:hover {
-    color: #abf5c1;
+    color: #d29bf4;
   }
 
   .typewriter-container {
