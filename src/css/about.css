@@ -1,10 +1,13 @@
 @media only screen and (max-width: 2000px) {
+  .about-page{
+    margin-left: 100px;
+  }
   .about-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    margin-left: 15%;
     color: rgb(20, 11, 53);
     justify-content: space-around;
-    margin-left: 20%;
   }
 
   .about-container h1 {
@@ -20,7 +23,7 @@
     overflow: scroll;
     background-color: rgba(219, 219, 219);
     text-align: justify;
-    width: 60%;
+    width: 70%;
     margin: 0;
     font-weight: lighter;
   }
@@ -28,6 +31,7 @@
   .about-section p {
     padding-left: 50px;
     padding-right: 20px;
+    font-size: 1.3rem;
     font-family: "Syne";
   }
 
@@ -67,33 +71,43 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .about-page{
+    margin-left: 0px;
+  }
+  .quote-container{
+    display: none;
+  }
+  .about-header-container{
+    display: flex;
+    height: 37vh;
+  }
+  .quote-text{
+    display: none;
+  }
   .about-container {
     width: 100%;
     height: 100%;
-    color: rgb(20, 11, 53);
-    display: block;
-    justify-content: space-around;
+    margin-left: 0;
   }
   .profile-pic {
-    border-radius: 50%;
-    border-width: 4px;
-    border-style: solid;
-    border-color: white;
+    border-radius: 0;
+    border-style: none;
     width: 250px;
     height: 250px;
-    margin-top: 7%;
+    margin-top: 26%;
   }
   .about-section {
-    margin-top: 7%;
     border: solid 5px white;
     border-radius: 15px;
     height: fit-content;
-    background-color: rgba(219, 219, 219, 0.8);
+    background-color: rgba(219, 219, 219);
     text-align: left;
+    overflow: scroll;
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 15%;
+    height: 55vh;
   }
 
   .about-section p {

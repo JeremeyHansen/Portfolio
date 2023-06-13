@@ -6,26 +6,34 @@ import { GoMarkGithub } from "react-icons/go";
 
 export default function PureQuality(){
     return (
-        <>
-        <h1 className="pq-title">Pure Quality.</h1>
-          <div>
-          <p className="pq-text">
-            An application I built for a client and his pressure washing business. 
-          </p>
-          <div className="pq-img-container">
-            <img className="pq-phone2"src={Phone2} alt="phone view of website" />
-            <img className="pq-computer" src={Computer} alt="computer view of website" />
-            <img className="pq-phone1" src={Phone1} alt="phone view of website" />
-
-          </div>
-          <button className="bb-button">
-            <a href="https://purequality.netlify.app">Visit Website</a></button>
-          </div>
-          <div className="pq-link">
-          <a href="https://github.com/JeremeyHansen/BassBuddies">
+      <div className="c-card">
+      <div className="card-c" style={{ position: "relative", zIndex: "2" }}>
+        <h1 className="port-title">PURE QUALITY.</h1>
+        <div className="github-link">
+          <a href="https://github.com/JeremeyHansen/PureQuality">
             <GoMarkGithub />
           </a>
+        </div>
+        <button className="bb-button">
+        <a href="https://purequality.netlify.app">Visit Website</a>
+        </button>        
+      <div className="phone-container">
+        <div>
+          <img className="phone1" alt="phone view" src={Phone1}></img>
+        </div>
+        <div>
+          <img className="phone2" alt="phone view" src={Phone2}></img>
+        </div>
+        <div>
+          <img className="phone3" alt="phone view" src={Computer}></img>
+        </div>
+      </div>
+          <div>
+            <p className="port-text3">
+            An application I built for a client and his pressure washing business.
+            </p>
           </div>
-      </>
+      </div>
+    </div>
     )
 }

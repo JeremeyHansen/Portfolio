@@ -4,12 +4,18 @@ import "../css/flatify.css";
 
 export default function Noteful() {
   return (
-    <div className="oj-container">
-      <h1 className="flat-title">Noteful.</h1>
-      <div className="port-video2">
+    <div className="c-card">
+    <div className="card-c" style={{ position: "relative", zIndex: "2" }}>
+      <h1 className="port-title">NOTEFUL.</h1>
+      <div className="github-link">
+        <a href="https://github.com/JeremeyHansen/Noteful">
+          <GoMarkGithub />
+        </a>
+      </div>
+      <div className="port-video">
         <div>
-          <p className="flat-text">
-            Noteful was designed to help solve the problem of missing important
+          <p className="port-text">
+          Noteful was designed to help solve the problem of missing important
             information. Noteful grants users the ability to create and
             subscribe to groups where they can view notes from classmates,
             co-workers/colleagues or whomever else is sharing relative
@@ -18,14 +24,10 @@ export default function Noteful() {
             authorization, create and subscribe to groups, and to post, edit, or
             delete notes.
           </p>
-          <div className="flat-link">
-            <a href="https://github.com/JeremeyHansen/Noteful">
-              <GoMarkGithub />
-            </a>
-          </div>
         </div>
         <video src={NotefulVid} loop autoPlay muted></video>
       </div>
+    </div>
     </div>
   );
 }

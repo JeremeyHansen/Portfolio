@@ -38,6 +38,7 @@ export default function Navbar() {
           </a>
         </div>
       </ul>
+      <div className="ham-container">
       <button
         className="navbar-toggler"
         id="hamburger-btn"
@@ -46,6 +47,7 @@ export default function Navbar() {
       >
         <FiMenu />
       </button>
+      </div>
       {open && (
         <div className="hamburger-nav">
           <ul className="navbar-ul">

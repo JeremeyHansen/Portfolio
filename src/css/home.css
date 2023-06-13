@@ -88,39 +88,60 @@
 
 
 @media only screen and (max-width: 480px) {
-    .home-container{
-        height: 10vh;
-    }
-    .home-contents h1{
-        position: fixed;
-        font-size: 2.7rem;
-        margin-top: 52%;
-    }
-    .home-contents h5{
-        position: fixed;
-        margin-top: 45%;
-        font-size: 1rem;
-    }
-    .home-text h3{
-        position: fixed;
-        margin-top: 70%;
-        font-size: .8rem;
-        width: 250px;
-        text-align: left;
-    }
-    .home-text p{
-        position: fixed;
-        margin-top: 85%;
-        font-size: .7rem;
-        width: 250px;
-    }
 
+    .home-contents{
+        margin-left: 0;
+        margin-top: 25%;
+    }
+    
+    .home-contents h5{
+        margin-left: 10px;
+        color: #317773;
+        font-size: 1.4rem;
+        font-family: 'Syne';
+    }
+    
+    .home-contents h1{
+        margin-left: 10px;
+        position: fixed;
+        margin-top: 25%;
+        font-size: 3rem;
+        font-family: 'Syne', sans-serif;
+        color: #a887fb;
+        font-weight: bold;
+    }
+    
+    .home-text h3{
+        margin-left: 10px;
+        margin-top: 43%;
+        font-size: 1.4rem;
+    }
+    
+    .home-text p{
+        margin-left: 10px;
+        margin-top: 52%;
+        width: 90%;
+        color: #708276;
+        font-family: 'Syne';
+        background-color: rgb(237, 245, 225, .8);
+    }
+    
     .contact-btn{
         position: fixed;
-        bottom: 0;
-        margin-left: none;
-        left: 0;
-        margin-bottom: 24%;
+        margin-top: 80%;
+        width: 50%;
+        margin-left: 10px;
+    }
+    .memoji{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .home-contents h1{
+        font-size: 2rem;
+        font-weight: bold;
     }
 
 }

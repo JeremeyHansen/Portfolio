@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import Me from '../text-face.png'
+import "animate.css";
 import "../css/contact.css"
 
 export default function Contact(){
@@ -32,6 +34,8 @@ export default function Contact(){
   };
 
   return (
+    <>
+    <div className="contact-page">
     <div className="contact-container">
         <h1 class="animate__animated animate__rubberBand">Contact Me!</h1>        
     <form className="contact-form" ref={form} onSubmit={sendEmail}>
@@ -44,5 +48,8 @@ export default function Contact(){
       <button className="send-btn"type="submit" onClick={() => setButtonText("Sent!")}>{buttonText}</button>
     </form>
     </div>
+    </div>
+      <img className="contact-pic" src={Me} alt="Memoji of me waving"></img>
+    </>
   );
 };

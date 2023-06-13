@@ -1,22 +1,31 @@
 
 @media only screen and (max-width: 2500px) {
+  .contact-page{
+    width: calc(100% - 100px);
+    margin-left: 100px;
+    height: 100%;
+    margin-top: calc((100vh - 70vh) / 2);
+    overflow: hidden;
+  }
 
 .contact-container {
   border: solid 5px white;
   border-radius: 10px;
-  height: 60vh;
-  margin-top: 6%;
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: rgba(19, 11, 63, 0.8);
+  height: 70vh;
+  width: 75%;
+  margin: auto;
+  background: linear-gradient(to bottom right, #403F44, #1E1B32);
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Syne';
   overflow: scroll;
 }
 .contact-container h1{
-  margin-top: 3%;
+  margin-top: 5%;
+  text-align: center;
 }
 .contact-form {
   height: 60vh;
@@ -27,7 +36,7 @@
 
 .contact-form input {
   width: 375px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Syne';
   border-style: none;
   border-radius: 10px;
   padding: 6px;
@@ -37,7 +46,7 @@
 .contact-form textarea {
   width: 375px;
 
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Syne';
   border-style: none;
   padding: 6px;
   margin-top: 20px;
@@ -54,43 +63,70 @@ input::placeholder {
 }
 
 .send-btn {
+    margin-top: 30px;
+    padding: 12px 30px 12px 30px;
+    text-transform: uppercase;
     border-style: none;
     border-style: solid;
     border-width: 2px;
-    border-color: #65ff91;
+    border-color: rgb(255, 255, 255);
     border-radius: 5px;
-    padding: 12px 30px 12px 30px;
-    color: #65ff91;
+    width: 250px;
+    padding: 12px 0px 12px 0px;
+    color: #edf5e1;
     text-transform: uppercase;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(0, 0, 0);
+    font-family: 'Syne';
+    letter-spacing: .3rem;
+    background-color: #78877e;
     transition: linear .3s;
-    font-weight: bold;
+    font-weight: lighter;
+    z-index: 5;
 }
 
 .send-btn:hover{
     color: rgb(0, 0, 0);
-    background-color: #65ff91;
-    box-shadow: 0 0 10px #65ff91, 0 0 20px #65ff91;
+    background-color: #d29bf4;
+    box-shadow: 0 0 10px #d29bf4, 0 0 20px #d29bf4;
     cursor: pointer;
+}
+.contact-pic{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 }
 @media only screen and (max-width: 480px) {
+  .contact-page{
+    width: 100%;
+    margin-left: 0px;
+    height: 100vh;
+    margin-top: 0px;
+    overflow: hidden;
+  }
   .contact-container{
-    margin-top: 70px;
-    height: 63vh;
+    margin-top: 130px;
+    min-height: fit-content;
     z-index: 2;
   }
   .contact-container input{
-    width: 70%;
+    width: 90%;
+    z-index: 5;
   }
   .contact-container textarea{
-    width: 70%;
-    height: 80px;
+    width: 90%;
+    height: 50px;
+    z-index: 5;
   }
   .nav li{
       visibility: hidden;
       font-size: .1rem;
+  }
+  .contact-pic{
+    transform: translateY(20px);
+    width: 75%;
+    padding: 0;
   }
 
 }

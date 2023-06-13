@@ -1,7 +1,7 @@
 .porthome-container{
-    margin-left: 100px;
     justify-content: center;
     text-align: center;
+    height: 100vh;
 }
 .porthome-container:hover{
     cursor: pointer;
