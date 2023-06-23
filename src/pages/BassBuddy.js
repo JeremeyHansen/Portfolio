@@ -29,7 +29,7 @@ export default function BassBuddy() {
             </p>
           </div>
           <div>
-            <video src={BassBuddyVid} loop autoPlay muted></video>
+            <video src={BassBuddyVid} loop autoPlay playsInline muted></video>
           </div>
         </div>
       </div>

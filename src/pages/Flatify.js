@@ -23,7 +23,7 @@ export default function Flatify() {
             player to play whatever music you desire. 
           </p>
         </div>
-        <video src={FlatifyVid} loop autoPlay muted></video>
+        <video src={FlatifyVid} loop autoPlay playsInline muted></video>
       </div>
     </div>
     </div>

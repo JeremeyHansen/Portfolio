@@ -23,7 +23,7 @@ export default function OnlyJams() {
             messenger system.
           </p>
         </div>
-        <video src={OnlyJamsVid} loop autoPlay muted></video>
+        <video src={OnlyJamsVid} loop autoPlay playsInline muted></video>
       </div>
     </div>
     </div>

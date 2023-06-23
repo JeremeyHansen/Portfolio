@@ -20,7 +20,7 @@ export default function WeSearch() {
             authentication, full CRUD on two models.
           </p>
         </div>
-        <video src={WeSearchVid} loop autoPlay muted></video>
+        <video src={WeSearchVid} playsInline loop autoPlay muted></video>
       </div>
     </div>
   </div>
