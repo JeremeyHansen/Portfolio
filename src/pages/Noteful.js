@@ -25,7 +25,7 @@ export default function Noteful() {
             delete notes.
           </p>
         </div>
-        <video src={NotefulVid} loop autoPlay muted></video>
+        <video src={NotefulVid} loop autoPlay playsInline muted></video>
       </div>
     </div>
     </div>
