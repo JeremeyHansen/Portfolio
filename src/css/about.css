@@ -107,7 +107,7 @@
     margin-left: 130%;
   }
   .about-section {
-    transform: translateY(-41px);
+    transform: translateY(-65px);
     border: solid 5px white;
     border-radius: 15px;
     height: fit-content;
@@ -117,7 +117,7 @@
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 15%;
-    height: 55vh;
+    height: 65vh;
     margin-top: 0;
   }
 
