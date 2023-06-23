@@ -238,6 +238,7 @@
   .port-video {
     width: 90%;
     display: block;
+    min-height: fit-contentgi;
   }
   .port-video video {
     width: 100%;
