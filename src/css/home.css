@@ -98,17 +98,16 @@
         margin-left: 0;
         margin-left: 10px;
         color: #317773;
-        font-size: 1.4rem;
+        font-size: 1rem;
         font-family: 'Syne';
     }
     
     .home-contents h1{
         margin-left: 0;
-
         margin-left: 10px;
         position: fixed;
-        margin-top: 25%;
-        font-size: 2.8rem;
+        margin-top: 18%;
+        font-size: 2.4rem;
         font-family: 'Syne', sans-serif;
         color: #a887fb;
         font-weight: bold;
@@ -116,17 +115,15 @@
     
     .home-text h3{
         margin-left: 0;
-
         margin-left: 10px;
-        margin-top: 43%;
-        font-size: 1.4rem;
+        margin-top: 35%;
+        font-size: 1.1rem;
     }
     
     .home-text p{
         margin-left: 0;
-
         margin-left: 10px;
-        margin-top: 52%;
+        margin-top: 45%;
         width: 90%;
         color: #708276;
         font-family: 'Syne';
@@ -135,7 +132,7 @@
     
     .contact-btn{
         position: fixed;
-        margin-top: 80%;
+        margin-top: 75%;
         width: 50%;
         margin-left: 0;
         margin-left: 10px;
