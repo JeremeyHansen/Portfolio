@@ -21,15 +21,15 @@ export default function BassBuddy() {
         </div>
         <div className="port-video">
           <div>
+            <video src={BassBuddyVid} loop autoPlay playsInline muted></video>
+          </div>
+          <div>
             <p className="port-text">
               An end to end responsive application built and designed to give
               user's a fun experience to find local EDM concerts in their
               respective cities. User's have the ability to search through the
               database and find shows on the map within their city.
             </p>
-          </div>
-          <div>
-            <video src={BassBuddyVid} loop autoPlay playsInline muted></video>
           </div>
         </div>
       </div>

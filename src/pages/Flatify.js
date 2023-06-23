@@ -13,6 +13,7 @@ export default function Flatify() {
         </a>
       </div>
       <div className="port-video">
+        <video src={FlatifyVid} loop autoPlay playsInline muted></video>
         <div>
           <p className="port-text">
           A Spotify-inspired music application created to simplify the process
@@ -23,7 +24,6 @@ export default function Flatify() {
             player to play whatever music you desire. 
           </p>
         </div>
-        <video src={FlatifyVid} loop autoPlay playsInline muted></video>
       </div>
     </div>
     </div>

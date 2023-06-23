@@ -13,6 +13,7 @@ export default function Noteful() {
         </a>
       </div>
       <div className="port-video">
+        <video src={NotefulVid} loop autoPlay playsInline muted></video>
         <div>
           <p className="port-text">
           Noteful was designed to help solve the problem of missing important
@@ -25,7 +26,6 @@ export default function Noteful() {
             delete notes.
           </p>
         </div>
-        <video src={NotefulVid} loop autoPlay playsInline muted></video>
       </div>
     </div>
     </div>

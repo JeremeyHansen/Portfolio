@@ -12,6 +12,7 @@ export default function WeSearch() {
         </a>
       </div>
       <div className="port-video">
+        <video src={WeSearchVid} playsInline loop autoPlay muted></video>
         <div>
           <p className="port-text">
           We Search is an Atlanta based Yelp mock up. Users can sign up and
@@ -20,7 +21,6 @@ export default function WeSearch() {
             authentication, full CRUD on two models.
           </p>
         </div>
-        <video src={WeSearchVid} playsInline loop autoPlay muted></video>
       </div>
     </div>
   </div>

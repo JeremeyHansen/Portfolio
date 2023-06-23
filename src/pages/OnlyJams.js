@@ -12,6 +12,7 @@ export default function OnlyJams() {
         </a>
       </div>
       <div className="port-video">
+        <video src={OnlyJamsVid} loop autoPlay playsInline muted></video>
         <div>
           <p className="port-text">
           As a musician, I've realized the social media realm lacks a platform
@@ -23,7 +24,6 @@ export default function OnlyJams() {
             messenger system.
           </p>
         </div>
-        <video src={OnlyJamsVid} loop autoPlay playsInline muted></video>
       </div>
     </div>
     </div>
