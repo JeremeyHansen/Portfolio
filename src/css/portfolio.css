@@ -241,11 +241,12 @@
   }
   .port-video video {
     height: 181px;
+    border-width: 0px 0px 0px 0px;
+
     -webkit-transform: translateX(15px);
     transform: translateX(15px);
     width: 100%;
-    background: black;
-  }
+    background: black  }
   .port-text {
     width: 100%;
     font-size: 1.1rem;
