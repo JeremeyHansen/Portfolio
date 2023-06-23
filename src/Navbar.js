@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="nav">
-      <Link to="/" className="site-title">
+      <Link to="/" className="site-title" onClick={handleOpenBurger}>
         <span className="site-title-lit">JH</span>
         <span className="title-period">.</span>
       </Link>

@@ -183,7 +183,7 @@ body {
   }
 
   .navbar-toggler {
-    /* position: fixed; */
+    position: fixed;
     display: block;
     border: 0;
     top: 0;
