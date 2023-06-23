@@ -95,6 +95,7 @@
     }
     
     .home-contents h5{
+        margin-left: 0;
         margin-left: 10px;
         color: #317773;
         font-size: 1.4rem;
@@ -102,22 +103,28 @@
     }
     
     .home-contents h1{
+        margin-left: 0;
+
         margin-left: 10px;
         position: fixed;
         margin-top: 25%;
-        font-size: 3rem;
+        font-size: 2.8rem;
         font-family: 'Syne', sans-serif;
         color: #a887fb;
         font-weight: bold;
     }
     
     .home-text h3{
+        margin-left: 0;
+
         margin-left: 10px;
         margin-top: 43%;
         font-size: 1.4rem;
     }
     
     .home-text p{
+        margin-left: 0;
+
         margin-left: 10px;
         margin-top: 52%;
         width: 90%;
@@ -130,6 +137,7 @@
         position: fixed;
         margin-top: 80%;
         width: 50%;
+        margin-left: 0;
         margin-left: 10px;
     }
     .memoji{

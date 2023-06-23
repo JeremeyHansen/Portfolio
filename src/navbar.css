@@ -25,7 +25,7 @@ body {
     justify-content: space-around;
     width: 100px;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -152,18 +152,25 @@ body {
   .nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     position: fixed;
-    height: 100px;
+    height: auto;
     top: 0;
     z-index: 9;
     border-width: 0px 0px 5px 0px;
     writing-mode: horizontal-tb;
     text-orientation: sideways;
+    text-align: right;
+    transition: linear 1s;
 }
+
   .site-title {
+    top: 0;
+    left: 0;
     font-size: 3rem;
     padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;    
   }
   .nav li {
     display: none;
@@ -176,50 +183,85 @@ body {
   }
 
   .navbar-toggler {
+    /* position: fixed; */
     display: block;
     border: 0;
+    top: 0;
+    right: 0;
     background-color: rgb(5, 5, 33, 0.01);
     color: white;
     font-size: 2.5rem;
+    margin-right: 15px;
+    margin-top: 15px;
   }
-  .ham-container{
-    margin: auto;
+  .inner-ham{
+    margin-top: 220px;
+    width: 50vw;
+  }
+  .hamburger-nav{
+    display: block;
+    margin-top: 0px;
+    background-color: rgb(5, 5, 33, 0.01);
+    height: 0px;
+    overflow: hidden;
+    animation: expand .5s linear forwards;
+    border: solid white;
+    border-width: 0px 0px 0px 2px;
+  }
+  .zen{
+    width: 320px;
     position: fixed;
-    right: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 11%);
+    animation: rise .5s linear forwards;
   }
-  .hamburger-nav {
-    margin-right: 0;
+
+  @keyframes rise {
+    0% {
+      transform: translateY(300px);
+
+    }
+    100% {
+      /* transform: translateY(11%); */
+    }
   }
+
+  @keyframes expand {
+    0% {
+      height: 0px;
+    }
+    100% {
+      height: 100vh;
+    }
+  }
+
   .hamburger-nav ul {
-    padding: 0;
-    background-color: #050521;
-    position: absolute;
-    top: 7.5%;
-    right: 0;
-    z-index: 2;
+    background-color: rgb(5, 5, 33, 0.01);
     display: inline;
-    width: 50%;
-    height: 100%;
-    border-style: none;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px;
-    border-radius: 5px;
+    
     padding-bottom: 15px;
     padding-top: 15px;
   }
 
+  @keyframes open {
+    0% {height: 0px}
+    100% {height: 300px}
+
+  }
+
   .ham-item {
     list-style-type: none;
-    color: rgb(104, 255, 167);
-    background-color: #050521;
+    color: rgb(255, 255, 255);
+    background-color: rgb(5, 5, 33, 0.01);
     border-style: none;
     border-style: solid;
     border-color: #ffffff;
     border-radius: 5px;
-    margin-top: 15px;
-    font-family: "Courier New", Courier, monospace;
-    text-transform: uppercase;
+    border-width: 0px 0px 3px 3px;
+    margin-top: 20px;
+    font-family: 'Syne';
+    text-transform: lowercase;
     font-size: 1rem;
     margin-left: 15px;
     margin-right: 15px;
@@ -244,5 +286,6 @@ body {
     padding-bottom: 15px;
     color: white;
     font-size: 1.5rem;
+    margin-top: 20px;
   }
 }

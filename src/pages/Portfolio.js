@@ -24,7 +24,7 @@ export default function Portfolio() {
       <OnlyJams />
       </div>    
     </div>
-    <div className="outer-port-container">
+    <div className="outer-port-container2">
       <div className="inner-port-container">
       <PQ />
       </div>    
